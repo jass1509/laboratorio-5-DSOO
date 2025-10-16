@@ -17,6 +17,4 @@ public class Paciente {
     public String getNombre() { return nombre; }
     public int getEdad() { return edad; }
     public String getDocumento() { return documento; }
-
-   
 }
