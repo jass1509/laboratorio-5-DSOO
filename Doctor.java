@@ -1,6 +1,5 @@
 package javaapplication45;
 
-import java.time.LocalTime;
 
 public class Doctor {
     private String codigo;
