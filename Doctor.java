@@ -7,7 +7,7 @@ public class Doctor {
     private boolean disponible; // true = disponible, false = no disponible
 
     public Doctor(String codigo, String nombre, String especialidad, boolean disponible) {
-        this.codigo = codigo;
+        setCodigo(codigo);
         this.nombre = nombre;
         this.especialidad = especialidad;
         this.disponible = disponible;
@@ -20,5 +20,14 @@ public class Doctor {
 
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
+    }
+    public void setCodigo(String codigo){
+        if (!Validador.NoRepetir(codigo, ListaCodigo)) {
+            this.codigo=codigo;
+            ListaCodigo.add(codigo);    
+        }
+        else{
+            System.out.println("Codigo repetido");
+        }
     }
 }

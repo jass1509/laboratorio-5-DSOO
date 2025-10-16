@@ -29,7 +29,14 @@ public class Cita {
         } else {
             System.out.println(" Estado inválido.");
         }
+
+    }
+    public boolean validarFecha() {
+        return Validador.formatoFechaValido(this.fecha);
     }
 
+    public boolean validarHora() {
+        return Validador.formatoHoraValido(this.hora);
+    }
    
 }
