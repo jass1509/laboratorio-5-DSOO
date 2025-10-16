@@ -18,8 +18,5 @@ public class Paciente {
     public int getEdad() { return edad; }
     public String getDocumento() { return documento; }
 
-    @Override
-    public String toString() {
-        return String.format("[%s] %s - %d años (DNI: %s)", codigo, nombre, edad, documento);
-    }
+   
 }
